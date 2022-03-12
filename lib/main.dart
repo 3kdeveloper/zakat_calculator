@@ -10,16 +10,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Zakat Calculator',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: AppColors.kPrimaryColor,
         colorScheme: ColorScheme.fromSwatch()
             .copyWith(secondary: AppColors.kAccentColor),
-        // scaffoldBackgroundColor:
+        scaffoldBackgroundColor: AppColors.kWhiteColor,
       ),
-      home: const SplashScreen(),
+      home: SplashScreen(),
     );
   }
 }
