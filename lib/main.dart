@@ -11,11 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Zakat Calculator',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: AppColors.kPrimaryColor,
         colorScheme: ColorScheme.fromSwatch()
             .copyWith(secondary: AppColors.kAccentColor),
+        // scaffoldBackgroundColor:
       ),
       home: const SplashScreen(),
     );
