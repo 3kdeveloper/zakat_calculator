@@ -1,4 +1,3 @@
-import 'package:zakat_calculator/controllers/splash_controller.dart';
 import 'package:zakat_calculator/utils/exports.dart';
 
 class SplashScreen extends StatelessWidget {

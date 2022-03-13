@@ -7,5 +7,5 @@ class AssetPaths {
       'assets/onBoardingImages/easily_calculate_zakat.svg';
   static const kOnBoarding2 = 'assets/onBoardingImages/share_zakat_receipt.svg';
   static const kOnBoarding3 =
-      'assets/onBoardingImages/store_calculator_zakat.svg';
+      'assets/onBoardingImages/store_calculated_zakat_receipt.svg';
 }
