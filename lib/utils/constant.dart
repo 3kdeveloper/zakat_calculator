@@ -1,11 +1,11 @@
 import 'exports.dart';
 
 EdgeInsets kDefaultPadding = EdgeInsets.symmetric(
-  horizontal: Get.width * 0.03,
+  horizontal: Get.width * 0.04,
 );
 
 const kTitleTextStyle = TextStyle(
-  fontSize: 18,
+  fontSize: 20,
   fontWeight: FontWeight.w700,
 );
 const kDescriptionTextStyle = TextStyle(

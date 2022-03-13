@@ -1,7 +1,22 @@
-import 'package:zakat_calculator/models/on_boarding_model.dart';
 import 'package:zakat_calculator/utils/exports.dart';
 
 class OnBoardingController extends GetxController {
+  var selectedPageIndex = 0.obs;
+  var pageController = PageController();
+
+  bool get isLastPage => selectedPageIndex.value == onBoardingPages.length - 1;
+
+  void goToNextPage() {
+    if (!isLastPage) {
+      pageController.nextPage(
+        duration: const Duration(microseconds: 300),
+        curve: Curves.ease,
+      );
+    } else {
+      Get.offAll(() => const HomeScreen());
+    }
+  }
+
   List<OnBoardingModel> onBoardingPages = [
     OnBoardingModel(
       imagePath: AssetPaths.kOnBoarding1,
